@@ -1,0 +1,8 @@
+<view class="beijing">
+<image src="/images/beijing.jpeg" class="image1"/>
+</view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view    class="weui-media-box__title weui-media-box__title_in-text"><text >{{title3.biaoti}}</text></view>
+                    <view class="weui-media-box__desc" ><text >{{title3.content}}</text></view>
+            </view>
+            <view  class="weui-media-box weui-media-box_text"></view>

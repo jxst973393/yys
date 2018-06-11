@@ -1,0 +1,21 @@
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">{{title6.biaoti}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h2">{{title6.biaoti2}}</view>
+                  <image class="images1" src="{{title6.images}}"  />
+                <view class="weui-article__section">
+                     <view class="weui-media-box__desc" ><text >{{title6.content1}}</text></view>
+                    <view class="weui-article__p">
+                 <view class="weui-article__section">
+                <view class="weui-article__h2">{{title6.biaoti4}}</view>
+                 <view class="weui-media-box__desc" ><text >{{title6.content2}}</text></view>
+                  <image class="images1" src="{{title6.images1}}" />
+                   <view class="weui-media-box__desc" ><text >{{title6.content3}}</text></view>
+                   <image class="images1" src="{{title6.images2}}" />
+                </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>

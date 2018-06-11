@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/by/by",
+    "pages/xx/xx",
+    "pages/by1/by1",
+    "pages/by2/by2",
+    "pages/by3/by3",
+    "pages/xy/xy",
+    "pages/by5/by5",
+    "pages/OuQidetails/OuQidetails",
+    "pages/OuQiReply/OuQiReply"
+   
+   ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTitleText": "阴阳师",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/xx-2.png",
+     "selectedIconPath": "images/xx.png",
+      "text": "悬赏"
+    },{
+    "pagePath": "pages/xx/xx",
+    "iconPath": "images/xx-2.png",
+     "selectedIconPath": "images/xx.png",
+      "text": "玄学"
+    },
+    {
+      "pagePath":"pages/xy/xy",
+      "iconPath":"images/kai.png",
+      "selectedIconPath":"images/guan.png",
+      "text":"手气"
+    }
+    ],
+    "selectedColor": "#FF0000"
+  }
+}

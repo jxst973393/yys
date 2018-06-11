@@ -1,0 +1,28 @@
+  <view class="neirong" >
+    <view class="yonghu">
+      <image class="yonghu-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="yonghu-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <image src="/images/oq.png" bindtap="dianji" open-type="navigate" class="neirong" />
+  </view>
+  <view class="quyu"  wx:for="{{gl2}}" wx:for-item="gl2" wx:key="objectId" data-item="{{gl2}}" bindtap="OuQidetails"  >
+    <view class="yonghu1" >
+      <image class="yonghu1-avatar" src="{{gl2.User.avatarUrl}}" background-size="cover" ></image>
+      <text class="yonghu1-nickname">{{gl2.User.nickName}}</text>
+    </view>
+     <text class="yonghu1-text">{{gl2.content}}</text> 
+     <image class="yonghu1-tupian"  src="{{gl2.url.url}}"  mode='aspectFit'  wx:for-item="gl2" wx:key="objectId" data-item="{{gl2}}" hidden='{{gl2.url.url == null}}' catchtap="previewImage"/>
+       <!-- <view class="quyu" wx:for-item="g3" wx:key="objectId" data-item="{{g3}}" >
+       <view class="classname"> -->
+         <!-- <button  class="yonghu1-anniu" type="primary" plain="true" size="mini"  bindtap="dianzan"  wx:for-item="gl2" wx:key="objectId" data-item="{{gl2}}"  wx:if="{{content != '取消' && gl2.objectId != g3.tiezi.objectId}}" >点赞</button> -->
+         <!--<image src="{{gl.User.avatarUrl}}" class="yonghu1-anniu" wx:for-item="gl" wx:key="objectId" data-item="{{gl}}"  wx:if="{{gl2.objectId == gl.tiezi.objectId}}"></image>-->
+     <!--<view class="bright789_view_hide{{showView?'bright789_view_show':''}}"  >-->
+    <!-- <button class="yonghu1-anniu"  type="warn" plain="true" size="mini"  bindtap="dianzan1"  wx:for-item="g3" wx:key="objectId" data-item="{{g3}}"  wx:if="{{content == '取消' || gl2.objectId == g3.tiezi.objectId}}"  >{{content}}</button> -->
+    <!--</view>-->
+    <!-- </view>
+    </view> -->
+  </view>
+
+<!--bindtap="OuQidetails"-->
+
+<!--hidden="{{content == '取消' || gl2.objectId == g3.tiezi.objectId}}" -->

@@ -1,0 +1,3 @@
+<view   bindtap="dianji" wx:for="{{title2}}" wx:key="objectId" wx:for-item="title2" data-item="{{title2}}">
+<view  class="chuangkou" open-type="navigate"><image src="{{title2.images}}"></image><text >{{title2.name}}</text></view>
+</view>

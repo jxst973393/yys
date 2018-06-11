@@ -1,0 +1,36 @@
+<form bindsubmit="dianji3">
+
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">图片上传</view>
+                <view class="weui-uploader__info">{{_File.length}}/9</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <form bindsubmit="dianji3">
+                  <textarea placeholder="请输入你对脱非入欧玄学的理解" name="textarea" />
+                </form>
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <view wx:for="{{_File}}" wx:key="*this">
+                    <view class="weui-uploader__file" bindtap="previewImage">
+                      <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                    </view>
+                  </view>
+                </view>
+                <view class="weui-uploader__input-box">
+                  <view class="weui-uploader__input" bindtap="dianji"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="dianji3" type="primary" form-type="submit" bindsubmit="dianji3"> 点击上传</button>
+  <button bindtap="dianji5">删除所选图片</button>
+</form>

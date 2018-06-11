@@ -1,0 +1,31 @@
+<swiper class="chuangkou" indicator-dots="{{indicatordost}}" autoplay="{{autoplay}}"interval="5000" duration="1000" circular="{{circular}}" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="white" >
+<view  wx:for="{{title6}}" wx:key="objectId" wx:for-item="title6" data-item="{{title6}}"  open-type="navigate" bindtap="dianji">
+<swiper-item >
+<view class="text1"><text class="wenzi">{{title6.name}}</text></view>
+<image src="{{title6.images}}"  class="images1"></image>
+</swiper-item>
+</view>
+</swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<view class="quyu" bindtap="ceshi" >
+  <view class="yonghu1" >
+    <image class="yonghu1-avatar" src="{{gl2.User.avatarUrl}}" background-size="cover"></image>
+    <text class="yonghu1-nickname">{{gl2.User.nickName}}</text>
+
+  </view>
+  <text class="yonghu1-text">{{gl2.content}}</text>
+  <image class="yonghu1-tupian" src="{{gl2.url.url}}" bindtap="previewImage" wx:for-item="gl2" wx:key="objectId" data-item="{{gl2}}" />
+  <button bindtap="shanchu" wx:for-item="gl2" wx:key="objectId" data-item="{{gl2}}" type="warn" size="mini" class="yonghu1-anniu" wx:if="{{showDelete}}" >删除</button>
+</view>
+ <image bindtap="reply" class="huifu" src="/images/xie.png">回复</image> 
+<view class="section">
+  <view class="bright789_view_hide{{showView?'bright789_view_show':''}}">
+    <form bindsubmit="bindFormSubmit">
+      <textarea class="bright789-text" placeholder="别人家的欧气的看法" name="textarea"  />
+      <button form-type="submit">回复</button>
+    </form>
+  </view>
+</view>
+
+
+<view class="weui-media-box weui-media-box_text" wx:for-item="gl1" wx:key="objectId" data-item="{{gl1}}" bindtap="ceshi" wx:if="{{gl2.objectId == gl1.tiezi.objectId}}" wx:for="{{gl1}}">
+  <image class="weui-media-box__thumb" src="{{gl1.User.avatarUrl}}" />
+  <text class="weui-media-box__title weui-media-box__title_in-text weui-media-box__desc">{{gl1.User.nickName}}:{{gl1.content}}</text>
+</view>
+<view class="weui-media-box_text"></view>
